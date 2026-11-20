@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- Task 1: add the viewport meta element on the next line. -->
+  <title>Trail Guides</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <p class="site-name">Trail Guides</p>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#trails">Trails</a></li>
+          <li><a href="#gear">Gear</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="site-main">
+      <div class="hero">
+        <svg width="800" height="200" viewBox="0 0 800 200" role="img" aria-label="Mountain skyline">
+          <rect width="800" height="200" fill="#d6ebe5"/>
+          <path d="M0 200 L180 60 L300 160 L460 30 L640 150 L800 80 L800 200 Z" fill="#0d6657"/>
+        </svg>
+      </div>
+      <h1 id="trails">Pick a trail</h1>
+      <section class="cards" aria-label="Trails">
+        <article class="card"><h2>Lake Loop</h2><p>5 km, easy.</p></article>
+        <article class="card"><h2>Ridge Walk</h2><p>9 km, moderate.</p></article>
+        <article class="card"><h2>Forest Path</h2><p>4 km, easy.</p></article>
+        <article class="card"><h2>Summit Climb</h2><p>14 km, hard.</p></article>
+        <article class="card"><h2>River Trail</h2><p>7 km, easy.</p></article>
+        <article class="card"><h2>Canyon Route</h2><p>11 km, hard.</p></article>
+      </section>
+      <!-- Tasks 7 to 10: this sign-up corner was pasted in from an old page
+           builder. Its wrapper, heading level, labels, validation and submit
+           control are wrong on purpose; the README walks through fixing them. -->
+      <!-- TODO task 7: this wrapper and the h4 below. -->
+      <div class="signup" id="signup">
+        <div class="signup-heading">
+          <h4>Join a guided hike</h4>
+          <p>A local guide takes groups of up to six on any trail.</p>
+        </div>
+        <!-- TODO task 10: this image. -->
+        <img class="signup-badge" src="badge.svg">
+        <!-- TODO task 8: wrap each field's text in a connected label.
+             TODO task 9: add the validation attributes to each input. -->
+        <form class="signup-form">
+          <div class="field">
+            Your name
+            <input id="hiker-name" name="hikerName">
+          </div>
+          <div class="field">
+            Email
+            <input id="hiker-email" name="hikerEmail">
+          </div>
+          <div class="field">
+            Group size (1 to 6)
+            <input id="group-size" name="groupSize" type="number">
+          </div>
+          <!-- TODO task 10: this control. -->
+          <div class="fake-button" role="button">Request a spot</div>
+        </form>
+      </div>
+    </main>
+    <aside class="site-aside" id="gear">
+      <h2>Gear checklist</h2>
+      <p>Water, a map, a rain jacket and a charged phone.</p>
+      <!-- TODO task 11: style these two tags in styles.css; keep their classes. -->
+      <p class="pack-tag pack-tag-day">Day pack: 20 litres</p>
+      <p class="pack-tag pack-tag-overnight">Overnight pack: 40 litres</p>
+    </aside>
+    <footer class="site-footer" id="about">
+      <p>Trail Guides is a practice page for this lab.</p>
+    </footer>
+  </div>
+</body>
+</html>
